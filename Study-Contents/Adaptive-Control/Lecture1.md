@@ -72,7 +72,7 @@ Let $V$ be a positive definite $C^1$ function
 
 1. Even though the plant is lenar, the control is non-linear.
 
-2. The control law is dynamic as it incoporates the tuning equation for $\hat{\theta}$
+2. The control law is dynamic as it incoporates the tuning equation for $\hat{\theta}$.
 
 3. We can think of the tuning law in the above example as an adaptation block in the overall system.
 
