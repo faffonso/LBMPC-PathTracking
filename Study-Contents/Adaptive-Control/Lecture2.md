@@ -27,7 +27,7 @@ Suppose that for some nonnegative definite continuous function $W$ we have
 
 $$\dot{V}(x) \leq -W(x) \leq 0 \;\; \forall x$$
 
-Let $x(t)$ be bounded and let it's derivative $\dot{x}(t)$ also be bounded. Let $W$ be a continous function of $x$ such that the integral
+Let $x(t)$ be bounded and let it's derivative $\dot{x}(t)$ also be bounded. Let $W$ be a continuos function of $x$ such that the integral
 
 $$\int_0^\infty W(x(s))ds=  L,\;\; |L| < \infty$$
 So,
