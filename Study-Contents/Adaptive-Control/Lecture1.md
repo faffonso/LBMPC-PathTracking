@@ -13,9 +13,9 @@ Now, we can explore the content of this section. Adaptive control aims to model 
 
 Let's consider the scalar system initially:
 
-$$
+```math
 \dot{x} = \theta x + u
-$$
+```
 where $x$ is state, $u$ is control and $\theta$ is an unknown parameter.
 
 *Note:* In adaptive control, there isn't consistent notation; it's possible to use $\theta$, $\theta^*$, $p^*$, or various other symbols.
@@ -31,9 +31,9 @@ Now, let's outline methods to regulate the system based on the value of $\theta$
 
     Here, applying a feedback law helps regulate the system:
 
-    $$
+    ```math
     u = -(\theta + 1)x \Rightarrow \dot{x} = -x
-    $$
+    ```
 
     *Note:* Any positive number can replace the +1.
 
@@ -41,28 +41,28 @@ Now, let's outline methods to regulate the system based on the value of $\theta$
 
     In such cases, we will employ the adaptive control law to demonstrate its functionality.
 
-    $$
+    ```math
     \dot{\hat{\theta}} = x^2
-    $$
-    $$
+    ```
+    ```math
     u = -(\hat{\theta} + 1)x
-    $$
-    $$
+    ```
+    ```math
     \therefore \dot{x} = (\theta - \hat{\theta} - 1)x
-    $$
+    ```
 
-    *Note:* Here, $\hat{\theta}$ represents the estimation of the unknown parameter, and we can define the error between the real and estimated parameter as $\tilde{\theta} = \hat{\theta} - \theta$..
+    *Note:* Here, $\hat{\theta}$ represents the estimation of the unknown parameter, and we can define the error between the real and estimated parameter as $\tilde{\theta} = \hat{\theta} - \theta$.
 
     This formulation allows us to attempt finding a Lyapunov Function to ensure the stability of this controller.
 
     Initially, the Lyapunov function should involve both states of the closed-loop system ($x$ and $\hat{\theta}$):
 
-    $$
+    ```math
     V(x, \hat{\theta}) := \frac{x^2}{2} + \frac{(\hat{\theta} - \theta)^2}{2}
-    $$
-    $$
+    ```
+    ```math
     \dot{V} = (\theta - \hat{\theta} - 1)x + (\hat{\theta} - \theta)x^2 = -x^2
-    $$
+    ```
 
     The selection of the $V$ function is based on the aim of achieving an asymptotically stable equilibrium at $x=0, \hat{\theta}=\theta$. However, the control objective doesn't explicitly necessitate $\hat{\theta} \rightarrow \theta$.
 
