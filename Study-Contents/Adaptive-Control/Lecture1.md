@@ -22,11 +22,11 @@ where $x$ is state, $u$ is control and $\theta$ is an unknown parameter.
 Now, let's outline methods to regulate the system based on the value of $\theta$.
 
 
-**1.**   If $\theta < 0$
+1. If $\theta < 0$
 
     In this scenario, the system regulation is achievable by setting the action $u \equiv 0$.
 
-**2.** If $\theta > 0$
+2. If $\theta > 0$
 
     Here, applying a feedback law helps regulate the system:
 
@@ -34,7 +34,7 @@ Now, let's outline methods to regulate the system based on the value of $\theta$
 
     *Note:* Any positive number can replace the +1.
 
-**3.** If $\theta$ is unknown
+3. If $\theta$ is unknown
 
     In such cases, we will employ the adaptive control law to demonstrate its functionality.
 
