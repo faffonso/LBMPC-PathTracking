@@ -22,11 +22,11 @@ where $x$ is state, $u$ is control and $\theta$ is an unknown parameter.
 Now, let's outline methods to regulate the system based on the value of $\theta$.
 
 
-1. If $\theta < 0$
+**1.**   If $\theta < 0$
 
     In this scenario, the system regulation is achievable by setting the action $u \equiv 0$.
 
-2. If $\theta > 0$
+**2.** If $\theta > 0$
 
     Here, applying a feedback law helps regulate the system:
 
@@ -34,7 +34,7 @@ Now, let's outline methods to regulate the system based on the value of $\theta$
 
     *Note:* Any positive number can replace the +1.
 
-3. If $\theta$ is unknown
+**3.** If $\theta$ is unknown
 
     In such cases, we will employ the adaptive control law to demonstrate its functionality.
 
@@ -50,12 +50,9 @@ Now, let's outline methods to regulate the system based on the value of $\theta$
 
     Initially, the Lyapunov function should involve both states of the closed-loop system ($x$ and $\hat{\theta}$):
 
-    ```math
-    V(x, \hat{\theta}) := \frac{x^2}{2} + \frac{(\hat{\theta} - \theta)^2}{2}
-    ```
-    ```math
-    \dot{V} = (\theta - \hat{\theta} - 1)x + (\hat{\theta} - \theta)x^2 = -x^2
-    ```
+    $$V(x, \hat{\theta}) := \frac{x^2}{2} + \frac{(\hat{\theta} - \theta)^2}{2}$$
+
+    $$\dot{V} = (\theta - \hat{\theta} - 1)x + (\hat{\theta} - \theta)x^2 = -x^2$$
 
     The selection of the $V$ function is based on the aim of achieving an asymptotically stable equilibrium at $x=0, \hat{\theta}=\theta$. However, the control objective doesn't explicitly necessitate $\hat{\theta} \rightarrow \theta$.
 
