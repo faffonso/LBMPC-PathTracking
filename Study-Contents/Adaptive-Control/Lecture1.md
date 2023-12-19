@@ -13,12 +13,11 @@ Now, we can explore the content of this section. Adaptive control aims to model 
 
 Let's consider the scalar system initially:
 
-```math
-\dot{x} = \theta x + u
-```
+$$\dot{x} = \theta x + u$$
+
 where $x$ is state, $u$ is control and $\theta$ is an unknown parameter.
 
-*Note:* In adaptive control, there isn't consistent notation; it's possible to use $\theta$, $\theta^*$, $p^*$, or various other symbols.
+*Note:* In adaptive control, there isn't consistent notation; it's possible to use $\theta$, $\theta^\ast $, $p^\ast $, or various other symbols.
 
 Now, let's outline methods to regulate the system based on the value of $\theta$.
 
@@ -31,9 +30,7 @@ Now, let's outline methods to regulate the system based on the value of $\theta$
 
     Here, applying a feedback law helps regulate the system:
 
-    ```math
-    u = -(\theta + 1)x \Rightarrow \dot{x} = -x
-    ```
+    $$u = -(\theta + 1)x \Rightarrow \dot{x} = -x$$
 
     *Note:* Any positive number can replace the +1.
 
@@ -41,15 +38,11 @@ Now, let's outline methods to regulate the system based on the value of $\theta$
 
     In such cases, we will employ the adaptive control law to demonstrate its functionality.
 
-    ```math
-    \dot{\hat{\theta}} = x^2
-    ```
-    ```math
-    u = -(\hat{\theta} + 1)x
-    ```
-    ```math
-    \therefore \dot{x} = (\theta - \hat{\theta} - 1)x
-    ```
+    $$\dot{\hat{\theta}} = x^2$$
+
+    $$u = -(\hat{\theta} + 1)x$$
+
+    $$\therefore \dot{x} = (\theta - \hat{\theta} - 1)x$$
 
     *Note:* Here, $\hat{\theta}$ represents the estimation of the unknown parameter, and we can define the error between the real and estimated parameter as $\tilde{\theta} = \hat{\theta} - \theta$.
 
