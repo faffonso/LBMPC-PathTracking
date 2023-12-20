@@ -64,9 +64,7 @@ x_n + y_n
 
 3. Element-wise Multiplication
 
-$$x \circ y
-=
-\begin{bmatrix}
+$$x \circ y = \begin{bmatrix}
 x_1 \\ 
 x_2 \\ 
 \vdots \\
