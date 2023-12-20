@@ -12,20 +12,18 @@ a_{m1} & a_{m2} & \cdots a_{mn}
 
 - Matrix-matrix multiplication
 
-$$\begin{bmatrix}
-- & a_1^T & - \\
-- & a_2^T & - \\
-& \vdots & \\
-- & a_m^T & - 
+$$\begin{bmatrix} 
+\mathbf{a_1^T} \\
+\mathbf{a_2^T}  \\
+\vdots \\
+\mathbf{a_m^T}
 \end{bmatrix} \begin{bmatrix}
-| & | & & | \\
-b_1 & b_2 & \cdots & b_k \\
-| & | & & | 
+\mathbf{b_1} & \mathbf{b_2}  & \cdots & \mathbf{b_k} 
 \end{bmatrix} = \begin{bmatrix}
-a_1^Tb_1 & a_1^Tb_2 & \cdots & a_1^Tb_k \\
-a_2^Tb_1 & a_2^Tb_2 & \cdots & a_2^Tb_k \\
+\mathbf{a_1^Tb_1} & \mathbf{a_1^Tb_2} & \cdots & \mathbf{a_1^Tb_k} \\
+\mathbf{a_2^Tb_1} & \mathbf{a_2^Tb_2} & \cdots & \mathbf{a_2^Tb_k} \\
 \cdots \\
-a_m^Tb_1 & a_m^Tb_2 & \cdots & a_m^Tb_k 
+\mathbf{a_m^Tb_1} & \mathbf{a_m^Tb_2} & \cdots & \mathbf{a_m^Tb_k} 
 \end{bmatrix}$$
 
 - Matrix can be used to represent a **linear system of equations**
