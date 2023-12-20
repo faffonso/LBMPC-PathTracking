@@ -23,8 +23,7 @@ $$\begin{bmatrix}
 \mathbf{a_1^T b_1} & \mathbf{a_1^T b_2} & \cdots & \mathbf{a_1^T b_k} \\
 \mathbf{a_2^T b_1} & \mathbf{a_2^T b_2} & \cdots & \mathbf{a_2^T b_k} \\
 \cdots & & & \\
-\mathbf{a_m^T b_1} & \mathbf{a_m^T b_2} & \cdots & \mathbf{a_m^T b_k} 
-\end{bmatrix}$$
+\mathbf{a_m^T b_1} & \mathbf{a_m^T b_2} & \cdots & \mathbf{a_m^T b_k} \end{bmatrix}$$
 
 - Matrix can be used to represent a **linear system of equations**
 
