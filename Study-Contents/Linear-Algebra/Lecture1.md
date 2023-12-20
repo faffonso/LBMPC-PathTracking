@@ -23,9 +23,7 @@ x_1 \\
 x_2 \\ 
 \vdots \\
 x_n
-\end{bmatrix}^T
-=
-\begin{bmatrix}
+\end{bmatrix}^T = \begin{bmatrix}
 x_1 & x_2 & \cdots & x_n
 \end{bmatrix}$$
 
@@ -52,16 +50,12 @@ x_1 \\
 x_2 \\ 
 \vdots \\
 x_n
-\end{bmatrix}
-+
-\begin{bmatrix}
+\end{bmatrix} + \begin{bmatrix}
 y_1 \\ 
 y_2 \\ 
 \vdots \\
 y_n
-\end{bmatrix}
-=
-\begin{bmatrix}
+\end{bmatrix} = \begin{bmatrix}
 x_1 + y_1\\ 
 x_2 + y_2\\ 
 \vdots \\
@@ -77,16 +71,12 @@ x_1 \\
 x_2 \\ 
 \vdots \\
 x_n
-\end{bmatrix}
-\circ
-\begin{bmatrix}
+\end{bmatrix} \circ \begin{bmatrix}
 y_1 \\ 
 y_2 \\ 
 \vdots \\
 y_n
-\end{bmatrix}
-=
-\begin{bmatrix}
+\end{bmatrix} = \begin{bmatrix}
 x_1y_1 \\ 
 x_2y_2 \\ 
 \vdots \\
@@ -95,23 +85,17 @@ x_ny_n
 
 4. Dot product or inner product
 
-$$x \cdot y
-=
-\begin{bmatrix}
+$$x \cdot y = \begin{bmatrix}
 x_1 \\ 
 x_2 \\ 
 \vdots \\
 x_n
-\end{bmatrix}
-\cdot
-\begin{bmatrix}
+\end{bmatrix} \cdot \begin{bmatrix}
 y_1 \\ 
 y_2 \\ 
 \vdots \\
 y_n
-\end{bmatrix}
-=
-x_1y_1 + x_2+y_2 + \cdots + x_ny_n$$
+\end{bmatrix} = x_1y_1 + x_2+y_2 + \cdots + x_ny_n$$
 
 5. Vector norm
     
