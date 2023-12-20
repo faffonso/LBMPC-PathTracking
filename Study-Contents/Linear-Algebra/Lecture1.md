@@ -3,8 +3,11 @@
 First, we will learn some basic concepts to apply latter using Python libraries.
 
 - **Scalar** is a single number.
-$$ \alpha, \;\; \alpha \in \mathbb{R}$$
+
+$$\alpha, \;\; \alpha \in \mathbb{R}$$
+
 - **Vector** is an ordered sequence of numbers, that represents a line or a direction.
+
 $$\mathbf{x} = \begin{bmatrix}
 x_1 \\ 
 x_2 \\ 
@@ -14,6 +17,7 @@ x_n
 \;\; \mathbf{x} \in \mathbb{R}^n$$
     
 - **Transpose** Can change a column vector as row vectors or inverse
+
 $$
 \begin{bmatrix}
 x_1 \\ 
