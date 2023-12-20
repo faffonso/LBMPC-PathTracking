@@ -38,9 +38,7 @@ v_1 \\
 v_2 \\ 
 \vdots \\
 v_n
-\end{bmatrix}
-=
-\begin{bmatrix}
+\end{bmatrix} = \begin{bmatrix}
 \alpha v_1 \\ 
 \alpha v_2 \\ 
 \vdots \\
