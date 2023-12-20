@@ -19,11 +19,6 @@ $$\begin{bmatrix}
 \mathbf{a_m^T}
 \end{bmatrix} \begin{bmatrix}
 \mathbf{b_1} & \mathbf{b_2}  & \cdots & \mathbf{b_k} 
-\end{bmatrix} = \begin{bmatrix}
-\mathbf{a_1^Tb_1} & \mathbf{a_1^Tb_2} & \cdots & \mathbf{a_1^Tb_k} \\
-\mathbf{a_2^Tb_1} & \mathbf{a_2^Tb_2} & \cdots & \mathbf{a_2^Tb_k} \\
-\cdots \\
-\mathbf{a_m^Tb_1} & \mathbf{a_m^Tb_2} & \cdots & \mathbf{a_m^Tb_k} 
 \end{bmatrix}$$
 
 - Matrix can be used to represent a **linear system of equations**
