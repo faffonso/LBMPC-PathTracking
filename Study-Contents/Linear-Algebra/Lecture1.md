@@ -127,7 +127,7 @@ To finish the the concepts of this lecture we will show some knowledge about the
 
     The span of a set of vectors is the set of all linear combinations of those vectors
 
-    $$ \text{span}(v_1, v_2, \cdots, v_k) = {\alpha_1 v_1 + \cdots + \alpha_k v_k | \alpha_i \in \mathbb{R}}$$
+    $$\text{span}(v_1, v_2, \cdots, v_k) = {\alpha_1 v_1 + \cdots + \alpha_k v_k | \alpha_i \in \mathbb{R}}$$
 
 3. Linear Independence 
 
