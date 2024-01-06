@@ -4,22 +4,28 @@ import numpy as np
 class Cost():
     def __init__(self, N, Q, R, Qf):
 
-        self.Qf = Qf
-        self.Q = Q
-        self.R = R
+        # Problem formulation
+
+        self.Qf = Qf    # Weight matrix for final state
+        self.Q = Q      # Weight matrix for state
+        self.R = R      # Weight matrix for action control
         
-        self.N = N
+        self.N = N      # Horizon size
 
-        x = ca.SX.sym('e', 3)
-        u = ca.SX.sym('u', 2)
+        x = ca.SX.sym('e', 3)   # State
+        u = ca.SX.sym('u', 2)   # Action control
 
-        l = 1/2 * (x.T @ Q @ x + u.T @ R @ u) 
-        lf = 1/2 * (x.T @ Qf @ x)
+        l = 1/2 * (x.T @ Q @ x + u.T @ R @ u)   # Running cost
+        lf = 1/2 * (x.T @ Qf @ x)               # Cost at final state
 
-        lx = ca.jacobian(l, x)
-        lu = ca.jacobian(l, u)
-        lxx = ca.jacobian(lx, x)
+        # Running cost derivatives
+
+        lx = ca.jacobian(l, x) 
+        lu = ca.jacobian(l, u) 
+        lxx = ca.jacobian(lx, x)  
         luu = ca.jacobian(lu, u)
+
+        # CasADi functions
 
         self._l = ca.Function('l', [x, u], [l])
         self._lf = ca.Function('lf', [x], [lf])  
@@ -32,8 +38,11 @@ class Cost():
     
     def _trajectory_cost(self, xs, us):
         J = 0
-        for x, u in zip(xs, us):
-            J += self._l(x, u)[0]
+        N = xs.size[0]
+        for n in range (N-1):
+            J += self._l(xs[n], us[n])
+
+        J += self._lf(xs[N-1], us[N-1])
 
         return J
 

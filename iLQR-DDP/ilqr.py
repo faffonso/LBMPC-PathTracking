@@ -181,8 +181,8 @@ if __name__ == "__main__":
     N = 50
     dt = .1
 
-    Qf = np.diag([5, 5, 0])
-    Q  = np.diag([3, 3, 0])
+    Qf = np.diag([5, 5, 2])
+    Q  = np.diag([3, 3, .5])
     R  = np.diag([1, 1])
 
     cost = Cost(N, Q, R, Qf)
@@ -194,19 +194,24 @@ if __name__ == "__main__":
 
     angle = 0
 
-    x0 = np.array([10, -4 , PI])
-    x_ref = np.array([4, 4, PI/4])
+    x_0 = np.array([10, -4 , 0])
+    x_ref = np.array([2, 0, PI])
 
-    us = np.array([[.5, .1] for _ in range(N)])
+    us = np.array([[.0, .0] for _ in range(N)])
+
+    x0 = x_ref - x_0
 
     xs, us = controller.fit(x0, us)
 
     print(f'Final state {xs}')
     print(f'Final action {us}')
 
+    x = xs[:, 0] + x_0[0]
+    y = xs[:, 1] + x_0[1]
+
     timestamp = np.arange(N)
     # Plotando x e y em função do tempo
-    plt.plot(xs[:, 0], xs[:, 1], label='e1') 
+    plt.plot(x, y, label='e1') 
     # plt.plot(timestamp, es[:, 1], label='e2') 
     # plt.plot(timestamp, es[:, 2], label='e3') 
 
