@@ -41,7 +41,7 @@ class Draw():
         xp = x[:, 0]
         yp = x[:, 1]
 
-        plt.figure(figsize=(8, 6))  # Define o tamanho da figura (opcional)
+        plt.figure(figsize=(6, 8))  # Define o tamanho da figura (opcional)
         plt.plot(xp, yp, linestyle='-')  # Plota o gráfico de linha com marcadores circulares
 
         # Adicionando rótulos e título
@@ -72,7 +72,7 @@ class Draw():
         fig, axs = plt.subplots(4, 1, figsize=(16, 9))  # Criar subplots
 
         # Plotando x_ref
-        axs[0].axhline(y=0, color='black', linestyle='-', linewidth=2)
+        axs[0].axhline(y=0, color='black', linestyle='-', linewidth=3)
         axs[0].plot(tx, x1, '--bo', color='r')
         axs[0].plot(tx[:k], x1[:k], '-bo', label='$(x - x_{ref})$', color='r')
         axs[0].set_xlim((0, tx[nx-1]))
@@ -80,7 +80,7 @@ class Draw():
         axs[0].legend()
 
         # Plotando y_ref
-        axs[1].axhline(y=0, color='black', linestyle='-', linewidth=2)
+        axs[1].axhline(y=0, color='black', linestyle='-', linewidth=3)
         axs[1].plot(tx, x2, '--bo', color='r')
         axs[1].plot(tx[:k], x2[:k], '-bo', label='$(y - y_{ref})$', color='r')
         axs[1].set_xlim((0, tx[nx-1]))
@@ -88,7 +88,7 @@ class Draw():
         axs[1].legend()
 
         # Plotando theta_ref
-        axs[2].axhline(y=0, color='black', linestyle='-', linewidth=2)
+        axs[2].axhline(y=0, color='black', linestyle='-', linewidth=3)
         axs[2].plot(tx, x3, '--bo', color='r')
         axs[2].plot(tx[:k], x3[:k], '-bo', label=r'$(\theta - \theta_{ref})$', color='r')
         axs[2].set_xlim((0, tx[nx-1]))
