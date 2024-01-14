@@ -5,11 +5,7 @@
 To get started with the installation, follow these steps to clone the repository:
 
 ```bash
-$ mkdir ~/catkin_ws
-$ cd ~/catkin_ws
-$ mkdir src
-$ cd src
-$ git submodule add https://github.com/Agricultural-Robotics-Competition/terrasentia_description.git
+$ git clone https://github.com/faffonso/LBMPC-PathTracking.git
 ```
 
 ### Repository Setup
@@ -17,7 +13,7 @@ $ git submodule add https://github.com/Agricultural-Robotics-Competition/terrase
 After cloning the repository, set up the repository with the following commands:
 
 ```bash
-$ cd ~/catkin_ws
+$ cd Simul/catkin_ws
 $ rosdep install --from-paths src --ignore-src -r -y
 $ catkin_make
 ```
