@@ -55,7 +55,7 @@ class NMPC():
         opti.minimize(obj)
 
         # Boundrary and control conditions
-        v_max       = 4.0
+        v_max       = 4.0a
         omega_max   = 1.5
 
         opti.subject_to(opti.bounded(0, v, v_max))

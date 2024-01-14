@@ -1,0 +1,2 @@
+terrasentia_description/terrasentia_description:terrasentia_description/terrasentia_models:terrasentia_description/terrasentia_sensors:terrasentia_description/terrasentia_world
+-DCATKIN_DEVEL_PREFIX=/home/faffonso/Documentos/IC/Algoritmos/LBMPC-PathTracking/Simul/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/faffonso/Documentos/IC/Algoritmos/LBMPC-PathTracking/Simul/catkin_ws/install -G Unix Makefiles
