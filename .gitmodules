@@ -1,6 +1,3 @@
 [submodule "Study-Algorithms/NN_RBF/PytorchRBFLayer"]
 	path = Study-Algorithms/NN_RBF/PytorchRBFLayer
 	url = https://github.com/rssalessio/PytorchRBFLayer.git
-[submodule "Simul/catkin_ws/src/terrasentia_description"]
-	path = Simul/catkin_ws/src/terrasentia_description
-	url = https://github.com/Agricultural-Robotics-Competition/terrasentia_description.git
